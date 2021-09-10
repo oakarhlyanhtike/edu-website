@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brand Page</title>
+    <link rel="stylesheet" type="text/css" href="brandstyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	 <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">SELLING SYSTEM</label>
+      <ul>
+        <li><a  href="homepage.html">Home</a></li>
+        <li><a class="active" href="#">Mobile-Phone</a></li>
+        <li><a href="otherloginstyle.html">Logout</a></li>
+        
+      </ul>
+    </nav>
+
+
+	<div id="img-box" class="full">
+		<div class="shawdow1"></div>
+		<div class="shawdow2"></div>
+		<img src="Image/phoneLogo/brand.jpg" id="smallimg">
+	</div>
+	<div class="imageList">
+		<ul>
+			<li onclick="onWebsite()">Mobile Products</li>
+			<li onclick="onIPone()">I Phone</li>
+			<li onclick="onSamsaung()">Samsaung</li>
+			<li onclick="onOppo()">Oppo</li>
+			<li onclick="onVivo()">Vivo</li>
+			<li onclick="onHuawei()">Huawei</li>
+			<li onclick="onMi()">Mi</li>
+		</ul>
+	</div>
+    <div class="btn-box " onclick="imageSize()">
+    	<span id="btnIcon">&#9776;</span>
+    </div>
+	<script type="text/javascript">
+		
+		var image=document.getElementById("smallimg");
+		var imageBox=document.getElementById("img-box");
+		var menuIcon=document.getElementById("btnIcon");
+        function onWebsite(){
+        	image.src ="Image/phoneLogo/brand.jpg";
+        }
+
+        function onIPone(){
+        	image.src ="Image/phoneLogo/iphone.jpg";
+        }
+
+        function onSamsaung(){
+        	image.src ="Image/phoneLogo/samsaung (2).jpg";
+        }
+
+        function onOppo(){
+        	image.src ="Image/phoneLogo/oppo.jpg";
+        }
+
+        function onVivo(){
+        	image.src ="Image/phoneLogo/vivo.jpg";
+        }
+
+        function onHuawei(){
+        	image.src ="Image/phoneLogo/huawei.jpg";
+        }
+        function onMi(){
+        	image.src ="Image/phoneLogo/mi.jpg";
+        }
+
+        function imageSize(){
+        	if(imageBox.className == "small"){
+        		imageBox.className = "full";
+        	    menuIcon.innerHTML = "&#9776";
+        	}
+        	else{
+        		imageBox.className = "small";
+        		 menuIcon.innerHTML = "&#10006";
+        	}
+        }
+	</script>
+</body>
+</html>

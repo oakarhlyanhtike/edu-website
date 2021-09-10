@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style link-->
+    <link rel="stylesheet" href="otherloginstyle.css">
+    <!-- js link-->
+    <script  src="login.js"></script>
+  </head>
+  <body>
+    <!-- header form -->
+    <nav>      
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">SELLING SYSTEM</label>
+
+      <ul>
+        <li><a href="login.html">Home</a></li>
+        <li><a class="active">Login</a></li>
+        <li><a  href="othersign.html">Signin</a></li>
+      </ul>
+    </nav>
+    <section>
+<div class="box">
+      <img src="user.png" class="avatar">
+        <h1>Welcome My Store</h1>
+  
+  <form method="post" id="form-id" name="myform" action="brand.html">
+    <div class="inputBox">
+    <input type="text"  name="" required="" id="username">
+    <label>Username</label>
+    </div>
+    <div class="inputBox">
+    <input type="password"  name="" required="" id="password">
+    <label>Password</label>
+  </div>
+  <input type="submit" id="submit" value="Login" onclick="validate()"/>
+  <br>
+  <br>
+  <div class="font" ><a href="othersign.html">create an account.</a></div>
+  <span><b class="valid">Admin Name : Oakar Hlain Htike<br/>Password : OG212443#</b></span>
+  </form>
+    </section>
+
+  </body>
+</html>
